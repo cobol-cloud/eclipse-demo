@@ -7,33 +7,6 @@
       <dependent-projects xsi:type="dependentProjectsSettings">
          <dependent-project name="LoanAmort"/>
       </dependent-projects>
-      <cobol_settings xsi:type="cobolSettings">
-         <options>
-            <option name="WARNING" value="1"/>
-            <option name="DIALECT" value="MF"/>
-            <option name="CHARSET" value="ASCII"/>
-            <option name="ILUSING" value="java.lang"/>
-            <option name="MAX-ERROR" value="100"/>
-            <option name="SOURCEFORMAT" value="variable"/>
-            <option name="NOWARNING"/>
-            <option id="LE370" name="ILUSING" value="com.microfocus.le370"/>
-         </options>
-         <createJar value="false"/>
-         <createJarAfterBuild value="false"/>
-         <debug value="true"/>
-         <enableCodeCoverage value="false"/>
-         <enableProfiler value="false"/>
-         <exitProgramAsGoback value="false"/>
-         <generate value="false"/>
-         <retainDirectivesFile value="false"/>
-         <genListFile value="false"/>
-         <jarFolder value=""/>
-         <jarName value=""/>
-         <packageToFolderMapping value="true"/>
-         <useJvmDynamicCalls value="false"/>
-         <useJvmIncrementalBuild value="false"/>
-         <verbose value="false"/>
-      </cobol_settings>
       <copybook-paths xsi:type="copybookPathsSettings">
          <path enabled="true" name="/LoanAmortTests" type="mfpath"/>
          <path enabled="true" name="/LoanAmort" type="mfpath"/>
@@ -44,35 +17,8 @@
          <path enabled="false" name="/LoanAmortTests/src/com/microfocus/loan/amort" type="mfpath"/>
       </copybook-paths>
       <configurations default="New Configuration" linkedWith="2017" xsi:type="buildConfigurationsContainer">
-         <configuration description="New Configuration" type="jvm" is64bit="true" createlbr="false" platform="Windows" xsi:type="cobolBuildConfiguration">
+         <configuration description="New Configuration" type="jvm" xsi:type="cobolBuildConfiguration">
             <targetdir name="bin"/>
-            <cobol_settings xsi:type="cobolSettings">
-               <options>
-                  <option name="WARNING" value="1"/>
-                  <option name="DIALECT" value="MF"/>
-                  <option name="CHARSET" value="ASCII"/>
-                  <option name="ILUSING" value="java.lang"/>
-                  <option name="MAX-ERROR" value="100"/>
-                  <option name="SOURCEFORMAT" value="variable"/>
-                  <option name="NOWARNING"/>
-                  <option id="LE370" name="ILUSING" value="com.microfocus.le370"/>
-               </options>
-               <createJar value="false"/>
-               <createJarAfterBuild value="false"/>
-               <debug value="true"/>
-               <enableCodeCoverage value="false"/>
-               <enableProfiler value="false"/>
-               <exitProgramAsGoback value="false"/>
-               <generate value="false"/>
-               <retainDirectivesFile value="false"/>
-               <genListFile value="false"/>
-               <jarFolder value="dist"/>
-               <jarName value="loanamorttests.jar"/>
-               <packageToFolderMapping value="true"/>
-               <useJvmDynamicCalls value="false"/>
-               <useJvmIncrementalBuild value="false"/>
-               <verbose value="false"/>
-            </cobol_settings>
          </configuration>
       </configurations>
       <extra-resource-files xsi:type="extraResourceFilesSettings"/>
@@ -82,5 +28,13 @@
          <file compile="true" path="src/com/microfocus/loan/amort/TESTLOANAMORT.cbl" xsi:type="cobolFile"/>
       </filetype>
       <filetype type="cobol.copybook" xsi:type="cobolFileContainer"/>
+      <folders xsi:type="cobolFolderContainer">
+         <folder compile="true" path="bin/com" xsi:type="cobolFolder"/>
+         <folder compile="true" path="bin/com/microfocus" xsi:type="cobolFolder"/>
+         <folder compile="true" path="bin" xsi:type="cobolFolder"/>
+         <folder compile="true" path="bin/com/microfocus/loan" xsi:type="cobolFolder"/>
+         <folder compile="true" path="bin/com/microfocus/loan/amort" xsi:type="cobolFolder"/>
+         <folder compile="true" path="src/com/microfocus/loan/amort" xsi:type="cobolFolder"/>
+      </folders>
    </files>
 </project>

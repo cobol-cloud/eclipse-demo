@@ -15,7 +15,7 @@
                     "Ref": "userName"
                 },
                 "LoginProfile": {
-                    "Password": "pass123",
+                    "Password": "MyP@ss123",
                     "PasswordResetRequired": true
                 },
                 "ManagedPolicyArns": [

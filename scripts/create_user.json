@@ -16,7 +16,7 @@
                 },
                 "LoginProfile": {
                     "Password": "MyP@ss123",
-                    "PasswordResetRequired": true
+                    "PasswordResetRequired": false
                 },
                 "ManagedPolicyArns": [
                     "arn:aws:iam::aws:policy/AmazonAPIGatewayAdministrator",
